@@ -1,0 +1,141 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0e0e2c;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1a40;
+  padding: 1rem 0;
+  border-bottom: 2px solid #2c2c6e;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #6c5ce7;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+}
+
+#upload input[type=file] {
+  margin: 1rem 0;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #444;
+}
+
+#analyzeBtn,
+#downloadBtn {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.ai-card {
+  background-color: #2c2c6e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.report-output {
+  background-color: #1a1a40;
+  padding: 1.5rem;
+  border-radius: 10px;
+  min-height: 200px;
+}
+
+.paypal-btn {
+  display: inline-block;
+  background-color: #0096c7;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+/* Contact Form */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#contactForm button {
+  padding: 0.75rem;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.success-message {
+  color: #00cec9;
+  margin-top: 1rem;
+}
+
+/* Dark/Light Mode */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #000000;
+  --card-bg: #f5f5f5;
+  --accent: #6c5ce7;
+}
+
+[data-theme="light"] body {
+  background-color: var(--bg);
+  color: var(--text);
+}
